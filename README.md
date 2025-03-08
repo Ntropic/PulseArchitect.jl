@@ -53,12 +53,6 @@ play(res, volume = 0.5)
 println("Parallel branch melody played with Splitter.")
 save(res, "parallel_melody")
 ```
-This code snippet creates the file 
-
-<audio controls>
-    <source src="https://raw.githubusercontent.com/Ntropic/PulseArchitect.jl/main/examples/parallel_melody.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
 
 ## Authors
 - [Michael Schilling](https://github.com/Ntropic)
