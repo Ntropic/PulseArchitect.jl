@@ -44,17 +44,21 @@ branch2 = AudioChain(delay_reverb; delay_time = 0.25, feedback = 0.5, mix = 0.7)
 
 # Create a parallel branch using the Splitter.
 # Passing a vector of AudioChains creates a Splitter that processes the input in parallel.
-chain = AudioChain(Splitter([0.5, 0.75], [branch1, branch2]))
-push!(chain, bandpass; low_cutoff = 200, high_cutoff = 2500)
-push!(chain, flanger; depth = 0.02, rate = 0.5, mix = 0.5, feedback = 0.5)
+chain = AudioChain(Splitter([0.5, 0.5], [branch1, branch2]))
+push!(chain, bandpass; low_cutoff=200, high_cutoff=2500)
 
 res = chain(res_parallel)
 # Process and play the sound asynchronously.
-play(res, volume = 0.125)
+play(res, volume = 0.5)
 println("Parallel branch melody played with Splitter.")
 save(res, "parallel_melody")
 ```
+This code snippet creates the file 
+
+<audio controls>
+  <source src="examples/parallel_melody.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
 
 ## Authors
-- [Michael Schilling](https://github.com/Ntropic)"# PulseArchitect.jl" 
-"# PulseArchitect.jl" 
+- [Michael Schilling](https://github.com/Ntropic)
