@@ -1,0 +1,19 @@
+name = "PulseArchitect"
+uuid = "dbc0c267-d109-4c6c-b2bb-d87c36f7afac"
+authors = ["Michael Schilling"]
+version = "0.0.1"
+
+[deps]
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+WAV = "8149f6b0-98f6-5db9-b78f-408fbbb8ef88"
+
+[compat]
+FFTW = "1.8.1"
+WAV = "1.2.0"
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -19,6 +19,8 @@ A quick example, first defining a melody, the wave_generator for it and then an 
 and finally playing the sound and saving it to disk.
 
 ```julia
+using PulseArchitect
+
 # Define a simple melody.
 parallel_melody = [
     ("C4", 0.5, 1.0),
