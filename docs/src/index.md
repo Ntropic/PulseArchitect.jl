@@ -57,6 +57,13 @@ This code snippet creates the audio file
   Your browser does not support the audio element.
 </audio>
 
+## Functions 
+The provided functions are split into 
+- [Pulse Architect](api/pulse_architect.md)
+- [Effects](api/effects.md)
+- [Audio Chains](api/audio_chains.md)
+- [Wave Generators](api/wave_generators.md)
+
 
 ## Authors
 

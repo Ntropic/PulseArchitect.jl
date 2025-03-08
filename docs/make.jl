@@ -2,8 +2,8 @@ using PulseArchitect
 using Documenter
 
 makedocs(
-    sitename = "PulseArchitect.jl",
     modules = [PulseArchitect],
+    sitename = "PulseArchitect.jl",
     pages = [
         "Home" => "index.md",
         "API Reference" => [
