@@ -37,28 +37,28 @@ jobs:
       - uses: julia-actions/cache@v2
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1
-      docs:
-        name: Documentation
-        runs-on: ubuntu-latest
-        permissions:
-          actions: write
-          contents: write
-          statuses: write
-        steps:
-          - uses: actions/checkout@v4
-          - uses: julia-actions/setup-julia@v2
-            with:
-              version: '1'
-          - uses: julia-actions/cache@v2
-          - name: Configure doc environment
-            run: |
-              julia --project=docs -e "using Pkg; Pkg.Registry.update(); Pkg.develop(PackageSpec(path=\".\")); Pkg.instantiate()"
-          - name: Build Docs
-            run: |
-              julia --project=docs -e "using Documenter; include(\"docs/make.jl\")"
-          - name: Deploy Docs to GitHub Pages
-            uses: JamesIves/github-pages-deploy-action@v4
-            with:
-              branch: gh-pages
-              folder: docs/build
-              token: ${{ secrets.GITHUB_TOKEN }}    
+  docs:
+    name: Documentation
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      statuses: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1'
+      - uses: julia-actions/cache@v2
+      - name: Configure doc environment
+        run: |
+          julia --project=docs -e "using Pkg; Pkg.Registry.update(); Pkg.develop(PackageSpec(path=\".\")); Pkg.instantiate()"
+      - name: Build Docs
+        run: |
+          julia --project=docs -e "using Documenter; include(\"docs/make.jl\")"
+      - name: Deploy Docs to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: docs/build
+          token: ${{ secrets.GITHUB_TOKEN }}    
