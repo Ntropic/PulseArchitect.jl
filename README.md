@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/Ntropic/PulseArchitect.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/Ntropic/PulseArchitect.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://Ntropic.github.io/PulseArchitect.jl/dev/)
+[![Documentation](https://img.shields.io/badgedocs-latest-blue.svg)](https://Ntropic.github.io/PulseArchitect.jl/)
 
 **PulseArchitect.jl** uis a Julia based Synthesizer, alolowing the generation and modification of audio signals from melodies and by defining process Chains. 
 The audio is played via `play` without blocking the execution of further code. 
