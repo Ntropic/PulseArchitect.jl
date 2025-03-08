@@ -56,8 +56,8 @@ save(res, "parallel_melody")
 This code snippet creates the file 
 
 <audio controls>
-  <source src="examples/parallel_melody.wav" type="audio/wav">
-  Your browser does not support the audio element.
+    <source src="https://raw.githubusercontent.com/Ntropic/PulseArchitect.jl/main/examples/parallel_melody.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
 </audio>
 
 ## Authors
