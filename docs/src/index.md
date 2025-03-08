@@ -50,6 +50,13 @@ play(res, volume = 0.5)
 println("Parallel branch melody played with Splitter.")
 save(res, "parallel_melody")
 ```
+This code snippet creates the audio file 
+
+<audio controls>
+  <source src="assets/parallel_melody.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
 
 ## Authors
 
