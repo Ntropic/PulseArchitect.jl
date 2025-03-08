@@ -50,21 +50,6 @@ play(res, volume = 0.5)
 println("Parallel branch melody played with Splitter.")
 save(res, "parallel_melody")
 ```
-This code snippet creates the audio file 
-
-<audio controls>
-  <source src="assets/parallel_melody.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-
-## Functions 
-The provided functions are split into 
-- [Pulse Architect](api/pulse_architect.md)
-- [Effects](api/effects.md)
-- [Audio Chains](api/audio_chains.md)
-- [Wave Generators](api/wave_generators.md)
-
 
 ## Authors
-
 - [Michael Schilling](https://github.com/Ntropic)
