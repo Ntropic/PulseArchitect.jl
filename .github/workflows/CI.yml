@@ -67,6 +67,6 @@ jobs:
         shell: julia --project=docs --color=yes {0}
         run: |
           using Documenter: DocMeta, doctest
-          using WaveWeaver
-          DocMeta.setdocmeta!(WaveWeaver, :DocTestSetup, :(using WaveWeaver); recursive=true)
-          doctest(WaveWeaver)
+          using PulseArchitect
+          DocMeta.setdocmeta!(PulseArchitect, :DocTestSetup, :(using PulseArchitect); recursive=true)
+          doctest(PulseArchitect)
